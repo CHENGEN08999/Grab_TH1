@@ -15,7 +15,8 @@
   left: calc(50% - 96.25px);
   width: 91px;
 }
-.greenline {
+.greenline,
+.group-icon2 {
   width: 192.5px;
   height: 24.09%;
   position: absolute;
@@ -24,6 +25,15 @@
   bottom: 15.51%;
   left: calc(50% - 106px);
   z-index: 0;
+}
+.group-icon2 {
+  width: 164px;
+  height: 1.22%;
+  top: 85.7%;
+  bottom: 13.08%;
+  left: calc(50% - 2px);
+  max-height: 100%;
+  z-index: 1;
 }
 .grab,
 .h1,
@@ -39,7 +49,7 @@
   letter-spacing: -0.01em;
   line-height: 22px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 2;
 }
 .h1,
 .h3 {
@@ -55,7 +65,7 @@
   left: calc(50% - 180px);
   font-size: 25px;
   line-height: 29px;
-  z-index: 2;
+  z-index: 3;
 }
 .h1 {
   margin: 0;
@@ -66,14 +76,11 @@
   letter-spacing: 0.01em;
   line-height: 40px;
 }
-.group-icon2,
-.screen1-title1 {
-  position: absolute;
-  margin: 0 !important;
-}
 .screen1-title1 {
   width: 358px;
   height: 12%;
+  margin: 0 !important;
+  position: absolute;
   top: 5.2%;
   bottom: 82.8%;
   left: calc(50% - 180px);
@@ -81,17 +88,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  z-index: 3;
-  font-size: 35px;
-}
-.group-icon2 {
-  width: 164px;
-  height: 10.18%;
-  top: 9.27%;
-  bottom: 80.55%;
-  left: calc(50% - 92.5px);
-  max-height: 100%;
-  z-index: 0;
+  z-index: 4;
+  font-size: var(--font-size-16xl);
 }
 .div {
   position: relative;
@@ -110,7 +108,6 @@
   height: 23px;
   padding: 0 2px;
   box-sizing: border-box;
-  z-index: 1;
 }
 .div1 {
   width: 155px;
@@ -126,7 +123,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  z-index: 2;
 }
 .animation1-icon,
 .last-description {
@@ -143,7 +139,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  z-index: 4;
+  z-index: 5;
 }
 .animation1-icon {
   width: 450px;
@@ -152,7 +148,7 @@
   bottom: 48.76%;
   left: calc(50% - 225px);
   max-height: 100%;
-  z-index: 5;
+  z-index: 6;
 }
 .screen1 {
   align-self: stretch;
@@ -163,7 +159,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 52px 46px 40px;
+  padding: 52px var(--padding-27xl) var(--padding-21xl);
   box-sizing: border-box;
   position: relative;
   gap: 313px;
@@ -172,9 +168,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 17px;
-  color: #005339;
-  font-family: "Inter TH";
+  font-size: var(--font-size-mid);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter-th);
 }
 .greenline-icon {
   width: 277.7px;
@@ -233,11 +229,11 @@
   margin: 0;
   align-self: stretch;
   height: 160px;
-  font-size: 35px;
+  font-size: var(--font-size-16xl);
   line-height: 40px;
   font-weight: 800;
   font-family: inherit;
-  color: #005339;
+  color: var(--color-darkslategray);
 }
 .screen3-title {
   width: 352px;
@@ -253,7 +249,7 @@
   justify-content: flex-start;
   gap: 13px;
   z-index: 3;
-  color: #00b14f;
+  color: var(--color-forestgreen);
 }
 .group-icon3 {
   position: absolute;
@@ -267,7 +263,7 @@
 }
 .span2 {
   font-weight: 800;
-  font-family: "Inter TH";
+  font-family: var(--font-inter-th);
 }
 .p,
 .p1 {
@@ -298,7 +294,7 @@
   bottom: 26.8%;
   left: calc(50% - 122px);
   z-index: 4;
-  font-size: 11px;
+  font-size: var(--font-size-2xs);
 }
 .animation2-icon,
 .button1-icon {
@@ -333,7 +329,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 60px 46px;
+  padding: var(--padding-41xl) var(--padding-27xl);
   box-sizing: border-box;
   position: relative;
   gap: 48px;
@@ -342,9 +338,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 17px;
-  color: #005339;
-  font-family: "Inter TH";
+  font-size: var(--font-size-mid);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter-th);
 }
 .greenline-icon1 {
   width: 324px;
@@ -388,12 +384,12 @@
   margin: 0;
   align-self: stretch;
   height: 160px;
-  font-size: 35px;
+  font-size: var(--font-size-16xl);
   letter-spacing: 0.01em;
   line-height: 40px;
   font-weight: 800;
   font-family: inherit;
-  color: #005339;
+  color: var(--color-darkslategray);
   min-width: 358px;
 }
 .screen2-title {
@@ -410,40 +406,38 @@
   justify-content: flex-start;
   gap: 6px;
   z-index: 3;
-  color: #00b14f;
+  color: var(--color-forestgreen);
 }
-.group-icon4 {
+.greenbg-icon {
   height: 100%;
   top: 0;
   bottom: 0;
-  left: calc(50% - 115.1px);
+  left: calc(50% - 115px);
   max-height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .div4,
-.group-icon4,
+.greenbg-icon,
 .image2 {
   position: absolute;
 }
 .div4 {
-  top: 69.44%;
-  left: calc(50% - 88.67px);
+  top: 69.51%;
+  left: calc(50% - 90.38px);
   line-height: 14px;
-  display: inline-block;
-  width: 173.2px;
-  transform: rotate(6.5deg);
+  transform: rotate(6.3deg);
   transform-origin: 0 0;
 }
 .image2 {
-  width: 230.2px;
-  height: 24.5%;
+  width: 230px;
+  height: 24.53%;
   margin: 0 !important;
-  top: 43.51%;
-  bottom: 31.99%;
+  top: 43.47%;
+  bottom: 32%;
   left: calc(50% - 120px);
   z-index: 4;
-  font-size: 11px;
+  font-size: var(--font-size-2xs);
 }
 .animation3-icon,
 .button2-icon {
@@ -482,7 +476,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 63px 46px 60px;
+  padding: 63px var(--padding-27xl) var(--padding-41xl);
   box-sizing: border-box;
   gap: 51px;
   background-image: url(./public/screen2@3x.png);
@@ -490,9 +484,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 17px;
-  color: #005339;
-  font-family: "Inter TH";
+  font-size: var(--font-size-mid);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter-th);
 }
 .h13 {
   margin: 0;
@@ -504,7 +498,7 @@
 .wildlife-conservation-society-container {
   width: 312px;
   position: relative;
-  font-size: 17px;
+  font-size: var(--font-size-mid);
   letter-spacing: -0.01em;
   line-height: 22px;
   display: inline-block;
@@ -530,7 +524,7 @@
 .screen4tophalf {
   align-self: stretch;
   height: 456px;
-  padding: 46px 46px 0;
+  padding: var(--padding-27xl) var(--padding-27xl) 0;
   box-sizing: border-box;
   position: relative;
   background-image: url(./public/screen4tophalf@3x.png);
@@ -538,9 +532,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 35px;
-  color: #005339;
-  font-family: "Inter TH";
+  font-size: var(--font-size-16xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter-th);
 }
 .div5,
 .greenline-icon2 {
@@ -587,7 +581,7 @@
 .grab1 {
   align-self: stretch;
   position: relative;
-  font-size: 17px;
+  font-size: var(--font-size-mid);
   letter-spacing: -0.19px;
   line-height: 23px;
 }
@@ -605,7 +599,7 @@
   justify-content: flex-start;
   gap: 12px;
   z-index: 3;
-  font-size: 35px;
+  font-size: var(--font-size-16xl);
 }
 .group-icon5 {
   height: 100%;
@@ -645,7 +639,7 @@
   left: 24.96%;
   z-index: 4;
   font-size: 24px;
-  color: #005339;
+  color: var(--color-darkslategray);
 }
 .animation4-icon,
 .button3-icon {
@@ -680,7 +674,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 40px 46px;
+  padding: var(--padding-21xl) var(--padding-27xl);
   box-sizing: border-box;
   position: relative;
   gap: 69px;
@@ -689,9 +683,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 17px;
-  color: #fff;
-  font-family: "Inter TH";
+  font-size: var(--font-size-mid);
+  color: var(--color-white);
+  font-family: var(--font-inter-th);
 }
 .p6 {
   margin: 0;
@@ -731,9 +725,9 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 11px;
-  color: #fff;
-  font-family: "Inter TH";
+  font-size: var(--font-size-2xs);
+  color: var(--color-white);
+  font-family: var(--font-inter-th);
 }
 .grab-th {
   width: 450px;
